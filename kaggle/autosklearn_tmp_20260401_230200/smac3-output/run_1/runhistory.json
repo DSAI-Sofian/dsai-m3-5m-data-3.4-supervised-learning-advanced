@@ -1,0 +1,161 @@
+{
+  "data": [
+    [
+      [
+        1,
+        "{\"task_id\": \"mlb_team_wins\"}",
+        0,
+        0.0
+      ],
+      [
+        2147483647.0,
+        118.51336288452148,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        1775055722.8902545,
+        1775055842.496819,
+        {
+          "error": "Timeout",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "{\"task_id\": \"mlb_team_wins\"}",
+        0,
+        0.0
+      ],
+      [
+        2147483647.0,
+        117.60966181755066,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        1775055842.6148148,
+        1775055961.2698233,
+        {
+          "error": "Timeout",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        3,
+        "{\"task_id\": \"mlb_team_wins\"}",
+        0,
+        0.0
+      ],
+      [
+        2147483647.0,
+        47.55010461807251,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        1775055961.3381903,
+        1775056009.9538217,
+        {
+          "error": "Timeout",
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "{\"task_id\": \"mlb_team_wins\"}",
+        0,
+        0.0
+      ],
+      [
+        2147483647.0,
+        0.0,
+        {
+          "__enum__": "StatusType.STOP"
+        },
+        1775056010.0388546,
+        1775056010.038855,
+        {}
+      ]
+    ]
+  ],
+  "config_origins": {
+    "1": "Initial design",
+    "2": "Initial design",
+    "3": "Initial design",
+    "4": "Initial design"
+  },
+  "configs": {
+    "1": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "no_preprocessing",
+      "regressor:__choice__": "random_forest",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "regressor:random_forest:bootstrap": "True",
+      "regressor:random_forest:criterion": "mse",
+      "regressor:random_forest:max_depth": "None",
+      "regressor:random_forest:max_features": 1.0,
+      "regressor:random_forest:max_leaf_nodes": "None",
+      "regressor:random_forest:min_impurity_decrease": 0.0,
+      "regressor:random_forest:min_samples_leaf": 1,
+      "regressor:random_forest:min_samples_split": 2,
+      "regressor:random_forest:min_weight_fraction_leaf": 0.0
+    },
+    "2": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "polynomial",
+      "regressor:__choice__": "adaboost",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:polynomial:degree": 2,
+      "feature_preprocessor:polynomial:include_bias": "True",
+      "feature_preprocessor:polynomial:interaction_only": "False",
+      "regressor:adaboost:learning_rate": 0.8420513715405185,
+      "regressor:adaboost:loss": "square",
+      "regressor:adaboost:max_depth": 10,
+      "regressor:adaboost:n_estimators": 480
+    },
+    "3": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "extra_trees_preproc_for_regression",
+      "regressor:__choice__": "gaussian_process",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:extra_trees_preproc_for_regression:bootstrap": "True",
+      "feature_preprocessor:extra_trees_preproc_for_regression:criterion": "friedman_mse",
+      "feature_preprocessor:extra_trees_preproc_for_regression:max_depth": "None",
+      "feature_preprocessor:extra_trees_preproc_for_regression:max_features": 0.969236220539822,
+      "feature_preprocessor:extra_trees_preproc_for_regression:max_leaf_nodes": "None",
+      "feature_preprocessor:extra_trees_preproc_for_regression:min_samples_leaf": 1,
+      "feature_preprocessor:extra_trees_preproc_for_regression:min_samples_split": 2,
+      "feature_preprocessor:extra_trees_preproc_for_regression:min_weight_fraction_leaf": 0.0,
+      "feature_preprocessor:extra_trees_preproc_for_regression:n_estimators": 100,
+      "regressor:gaussian_process:alpha": 0.013068012551322245,
+      "regressor:gaussian_process:thetaL": 2.979079708104577e-07,
+      "regressor:gaussian_process:thetaU": 50599.0613366392
+    },
+    "4": {
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "extra_trees_preproc_for_regression",
+      "regressor:__choice__": "gaussian_process",
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "none",
+      "feature_preprocessor:extra_trees_preproc_for_regression:bootstrap": "True",
+      "feature_preprocessor:extra_trees_preproc_for_regression:criterion": "friedman_mse",
+      "feature_preprocessor:extra_trees_preproc_for_regression:max_depth": "None",
+      "feature_preprocessor:extra_trees_preproc_for_regression:max_features": 0.8609499435062687,
+      "feature_preprocessor:extra_trees_preproc_for_regression:max_leaf_nodes": "None",
+      "feature_preprocessor:extra_trees_preproc_for_regression:min_samples_leaf": 9,
+      "feature_preprocessor:extra_trees_preproc_for_regression:min_samples_split": 15,
+      "feature_preprocessor:extra_trees_preproc_for_regression:min_weight_fraction_leaf": 0.0,
+      "feature_preprocessor:extra_trees_preproc_for_regression:n_estimators": 100,
+      "regressor:gaussian_process:alpha": 0.023379450779571848,
+      "regressor:gaussian_process:thetaL": 2.659222467552488e-10,
+      "regressor:gaussian_process:thetaU": 292.5678884045162
+    }
+  }
+}

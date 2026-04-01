@@ -2,6 +2,7 @@ name: ml2
 channels:
   - defaults
   - conda-forge
+
 dependencies:
   - lightgbm=4.1.0
   - matplotlib=3.8.0
